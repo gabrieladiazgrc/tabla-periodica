@@ -1,0 +1,52 @@
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 70px);
+    grid-template-rows: repeat(10, 70px);
+    grid-gap: 4px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: move;
+}
+
+.element {
+    background: white;
+    border: 2px solid #aaa;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.element:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 1;
+}
+
+.element .number {
+    font-weight: bold;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.element .name {
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.element .atomic-mass {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
